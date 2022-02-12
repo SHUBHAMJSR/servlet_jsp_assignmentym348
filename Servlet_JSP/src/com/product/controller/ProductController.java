@@ -28,6 +28,10 @@ public class ProductController extends HttpServlet {
     
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		response.setHeader("Cache-control","no-store");
+		response.setHeader("Pragma","no-cache");
+		response.setDateHeader("Expires",0);
+		
 		String action=request.getParameter("action");
 		
 		if(action.equals("showall"))

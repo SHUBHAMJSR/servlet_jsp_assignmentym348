@@ -25,6 +25,9 @@ tr:nth-child(even) {
 
 </head>
 <body>
+welcome ${user.username}
+<br>
+<a href="LogoutController">logout</a>
 	<table>
 		<thead>
 			<th>id</th>
